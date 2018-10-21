@@ -120,7 +120,7 @@ class DatePicker extends Component {
 
     // date默认值
     if (!date) {
-      let now = this.props.defaultDate ? new Date(this.props.defaultDate) : new Date();
+      let now = this.props.defaultDate || new Date();
       if (minDate) {
         let _minDate = this.getDate(minDate);
 
